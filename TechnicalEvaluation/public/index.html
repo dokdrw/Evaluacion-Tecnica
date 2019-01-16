@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technical Evaluation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importando Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+    <!--<script src="main.js"></script>-->
+</head>
+<body>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+            <h5 class="text-white h4">Opciones adicionales</h5>
+            <span class="text-muted">Aqui puede agregar todas las opciones que quiera.</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark" style="justify-content: normal; background-color: #3f719a">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="img/red_color.png" alt="Perfil" class="rounded-circle" style="width: 30px; margin-left: 15px;">
+            <a class="navbar-brand" href="#" style="margin-left: 5px; font-size: 1rem !important;">Nombre de Usuario</a>
+            <a class="navbar-brand" href="#" style="margin: auto;">Reporte de Ventas</a>
+        </nav>
+    </div>
+    <div style="margin: 0; padding: 15px;">
+        <div class="row">
+            <div class="col-4 col-sm-4 col-md-2 col-lg-1 mb-3" align="right">
+                <label for="categoria" style="margin-top: 8px;">Categoria</label>
+            </div>
+            <div class="col-8 col-sm-8 col-md-4 col-lg-3 mb-3">
+                <select class="custom-select d-block w-100" id="categoria">
+                    <option>Comida</option>
+                    <option>Electrodomésticos</option>
+                </select>
+            </div>
+            <div class="col-4 col-sm-4 col-md-2 col-lg-1 mb-3" align="right">
+                <label for="producto" style="margin-top: 8px;">Producto</label>
+            </div>
+            <div class="col-8 col-sm-8 col-md-4 col-lg-3 mb-3">
+                <select class="custom-select d-block w-100" id="producto">
+                    <option>Cereales</option>
+                    <option>Carnes</option>
+                </select>
+            </div>
+            <div class="col-4 col-sm-4 col-md-2 col-lg-1 mb-3" align="right">
+                <label for="marca" style="margin-top: 8px;">Marca</label>
+            </div>
+            <div class="col-8 col-sm-8 col-md-4 col-lg-3 mb-3">
+                <select class="custom-select d-block w-100" id="marca">
+                    <option>Cereal 1</option>
+                    <option>Cereal 2</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+    </div>
+
+    <!--Importando librerias de JQuery y Bootstrap-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--Importando librerias de highcharts-->
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="js/export-data.js"></script>
+    
+    <!--Importando el script de control-->
+    <script src="js/controlador.js"></script>
+</body>
+</html>
